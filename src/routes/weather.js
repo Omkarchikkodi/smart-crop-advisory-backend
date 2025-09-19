@@ -14,11 +14,14 @@ router.get("/", async (req, res) => {
 
   try {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.OPENWEATHER_KEY}`;
-    console.log("Requesting:", url);
+    console.log("Requesting OpenWeather:", url);
 
     const response = await axios.get(url);
 
-    res.json({ success: true, data: response.data });
+    return res.json({
+      success: true,
+      data: response.data,
+    });
   } catch (err) {
     if (err.response) {
       console.error("OpenWeather API error:", err.response.status, err.response.data);
