@@ -15,6 +15,7 @@ const chatbotRoutes = require("./routes/chatbot");
 const app = express();
 const allowedOrigins = [
   "https://kisanmitraai.vercel.app",  // your frontend domain
+  "https://smart-crop-advisory-frontend-git-main-omkar-chikkodis-projects.vercel.app",
 ];
 
 app.use(cors({
@@ -25,7 +26,7 @@ app.use(cors({
       callback(new Error("Not allowed by CORS"));
     }
   },
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));
 
