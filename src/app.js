@@ -13,22 +13,30 @@ const chatbotRoutes = require("./routes/chatbot");
 
 
 const app = express();
+// List of allowed origins
 const allowedOrigins = [
-  "https://kisanmitraai.vercel.app",  // your frontend domain
-  "https://smart-crop-advisory-frontend-git-main-omkar-chikkodis-projects.vercel.app",
+  "https://kisanmitraai.vercel.app", // production
+  "https://smart-crop-advisory-frontend-git-main-omkar-chikkodis-projects.vercel.app", // branch deploy
+  "https://smart-crop-advisory-frontend-froej5jqm-omkar-chikkodis-projects.vercel.app", // preview
+  "https://smart-crop-advisory-frontend-omkar-chikkodis-projects.vercel.app", // another preview
+  /\.vercel\.app$/  // regex: allow any vercel.app domain
 ];
 
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-}));
+// ✅ dynamic CORS check
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true); // allow mobile apps, Postman, etc.
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"), false);
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
