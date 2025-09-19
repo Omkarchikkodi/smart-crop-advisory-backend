@@ -13,7 +13,22 @@ const chatbotRoutes = require("./routes/chatbot");
 
 
 const app = express();
-app.use(cors());
+const allowedOrigins = [
+  "https://kisanmitraai.vercel.app",  // your frontend domain
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST"],
+  credentials: true,
+}));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
