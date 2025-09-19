@@ -1,0 +1,82 @@
+[
+  {
+    "keywords": ["tomato", "price", "rate", "market"],
+    "answer": "The average market price of tomato is around ₹1500–₹1800 per quintal depending on the region."
+  },
+  {
+    "keywords": ["wheat", "price", "market", "rate"],
+    "answer": "The current market price of wheat is about ₹2200–₹2300 per quintal."
+  },
+  {
+    "keywords": ["rice", "paddy", "price", "rate"],
+    "answer": "The price of paddy rice is around ₹2000 per quintal in most markets."
+  },
+  {
+    "keywords": ["sugarcane", "price", "rate"],
+    "answer": "Sugarcane price is around ₹3200 per quintal this season."
+  },
+  {
+    "keywords": ["maize", "corn", "price"],
+    "answer": "Maize price is approximately ₹1800 per quintal in local markets."
+  },
+  {
+    "keywords": ["weather", "rain", "forecast", "climate"],
+    "answer": "The weather today is partly cloudy with a chance of light rain in the evening."
+  },
+  {
+    "keywords": ["monsoon", "rainfall"],
+    "answer": "The monsoon this year is expected to be normal with good rainfall across major agricultural regions."
+  },
+  {
+    "keywords": ["fertilizer", "urea", "DAP", "fertilisers"],
+    "answer": "Urea is available at ₹266 per bag, and DAP is priced at around ₹1350 per bag under government subsidy."
+  },
+  {
+    "keywords": ["npk", "fertilizer recommendation", "soil nutrients"],
+    "answer": "For balanced soil fertility, apply NPK in a 4:2:1 ratio as per crop requirement."
+  },
+  {
+    "keywords": ["pest", "infestation", "insects", "control"],
+    "answer": "Use neem-based bio-pesticides or integrated pest management practices to reduce pest infestation."
+  },
+  {
+    "keywords": ["government", "scheme", "subsidy", "loan"],
+    "answer": "You can apply for PM Kisan Samman Nidhi, which provides ₹6000 annually in three installments."
+  },
+  {
+    "keywords": ["crop insurance", "pmfby", "insurance scheme"],
+    "answer": "Under the PM Fasal Bima Yojana (PMFBY), farmers can insure their crops at a nominal premium."
+  },
+  {
+    "keywords": ["irrigation", "water", "drip", "sprinkler"],
+    "answer": "Drip irrigation saves up to 50% water and increases crop yield significantly compared to flood irrigation."
+  },
+  {
+    "keywords": ["tractor", "equipment", "loan", "machinery"],
+    "answer": "Tractor loans with subsidies are available under NABARD and state agriculture departments."
+  },
+  {
+    "keywords": ["soil health", "testing", "ph", "nutrient"],
+    "answer": "Get your soil tested at the nearest Soil Health Card (SHC) center for accurate fertilizer recommendations."
+  },
+  {
+    "keywords": ["storage", "warehouse", "godown"],
+    "answer": "You can store crops in government warehouses under the Warehousing Development Authority for safe keeping."
+  },
+  {
+    "keywords": ["transport", "mandi", "market access"],
+    "answer": "You can sell crops directly at eNAM mandis for better transparency and pricing."
+  },
+  {
+    "keywords": ["organic", "farming", "biofertilizer"],
+    "answer": "Organic farming improves soil fertility naturally and reduces dependency on chemicals."
+  },
+  {
+    "keywords": ["milk", "dairy", "livestock", "cattle"],
+    "answer": "NABARD and state schemes provide subsidies for dairy farming and livestock health insurance."
+  },
+  {
+    "keywords": ["loan waiver", "debt relief"],
+    "answer": "Some states provide farm loan waiver schemes. Check with your local agriculture department for eligibility."
+  }
+]

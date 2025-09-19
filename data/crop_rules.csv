@@ -1,0 +1,6 @@
+crop,min_temp,max_temp,min_rain,max_rain,soil_types,season,sowing_start,sowing_end
+paddy,20,35,800,3000,clay;loamy,kharif,06-01,09-30
+wheat,10,25,300,900,loamy;sandy,rabi,10-01,12-31
+millet,18,40,200,900,sandy;loamy,summer,03-01,05-30
+maize,15,32,500,1500,loamy;sandy,kharif,06-01,08-31
+sugarcane,20,35,800,2500,loamy;clay,kharif,02-01,04-30
